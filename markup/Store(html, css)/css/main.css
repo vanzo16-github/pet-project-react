@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .wrapper {
+     max-width: 90%;
+     margin: 0 auto;
+  }
+  
+  header.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px 0;
+  }
+  
+  .good_card {
+      display: flex;
+      position: relative;
+      max-width: 400px;
+      min-height: 500px;
+      border-radius: 10px;
+      background: white;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      cursor: pointer;
+  }
+  
+  h1.good_card-title {
+      font-size: 32px;
+      font-weight: 500;
+  }
+  
+  span.good_card-category {
+      font-size: 14px;
+      color: #888888;
+      margin-top: -10px;
+  }
+  
+  p.good_card-price {
+      font-size: 48px;
+      font-weight: 600;
+  }
+  
+  button.good_card-buy, button.good_content-buy {
+      max-width: 380px;
+      min-height: 60px;
+      background: #222222;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 3;
+  }
+  
+  main.goods {
+      margin-bottom: 30px;
+  }
+  .phone::before {
+      content: '';
+      background-image: url(../img/phone.svg);
+      display: block;
+      position: relative;
+      width: 11px;
+      height: 20px;
+      right: 20px;
+      top: 20px;
+  }
+  
+  .phone {
+      font-size: 24px;
+      margin-left: 30px;
+  }
+  
+  .bag {
+      font-size: 24px;
+  }
+  
+  .bag::before {
+      content: '';
+      background-image: url(../img/bag.svg);
+      display: block;
+      position: relative;
+      width: 17px;
+      height: 20px;
+      top: 22px;
+      right: 25px;
+  }
+  
+  .bag span {
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      margin-left: 30px;
+      width: 30px;
+      height: 30px;
+      background: #222222;
+      border-radius: 100px;
+      color: #fff;
+      vertical-align: middle;
+  
+  }
+  .good_card:hover {
+      background-color: #FFF3E3;
+  }
+  a.good_card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  main.goods {
+    display: flex;
+    justify-content: space-between;
+}
+.good_card-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+img.good_card-img-cart {
+    width: 10vw;
+}
+button.good_card-exit {
+    background: #fff;
+    border: 1px solid #222;
+    color: #222;
+    font-size: 18px;
+}
+main.goods_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gods_cart-left {
+    width: 70%;
+}
+
+h2.goods_cart-title {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+.goods_cart-sum {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.goods_cart-all {
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
+    justify-content: space-between;
+}
+.goods_cart-right {
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2.goods_cart-order {
+    font-size: 42px;
+}
+
+button.good_card-order {
+    width: 100%;
+    height: 10vh;
+    background: #222;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer
+}
+img.good_content-img {
+    min-width: 400px;
+    min-height: 400px;
+}
+
+main.good_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1.good_content-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p.good_content-price {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 5px;
+}
+p.good_content-desc {
+    font-size: 14px;
+}
+
+.good_content-right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@media (max-width: 480px) {
+    header.header {
+        flex-direction: column;
+    }
+    img.logo_img {
+        margin: 30px 0;
+    }
+    main.goods {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+  }
+  
